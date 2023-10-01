@@ -2,8 +2,11 @@ body{margin: 0;}
 
 header{
     display: flex;
-    background-color:#D0E2FD;
+    background-color:#ededed;
     padding: 3px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 header img{
@@ -13,18 +16,89 @@ header img{
 }
 
 header p{
-    background-color: #C1C3F8;
-    padding: 2px;
+    background-color: white;
+    padding: 3px;
     border-radius: 10px;
     margin-right: 55px;
     border: 2px solid #000;
+    
 }
 
+
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: -50px;
+    bottom: 50px;
+    background: #3f98ef;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+/* 
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  } */
 
 #container1{
     display: flex;
     padding: 100px;
+    padding-bottom: 20px;
+      
 }
+
 #container2{
     display: flex;
     flex-direction: column;
@@ -32,16 +106,45 @@ header p{
 }
 
 #container1 img{
-    width: 40%; /* 幅を30%に指定 */
+    width: 45%; /* 幅を30%に指定 */
     height: auto; /* 高さを自動調整 */
 }
 
-#container1 h1{
-    font-size:20px;
+#container2 img{
+    width: 120%; /* 幅を30%に指定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+#container1 h2{
+    font-size:25px;
+    margin-bottom: 0;
+}
+
+#img1{
+    height: 30px; /* 高さを自動調整 */
+    width: auto; /* 幅を30%に指定 */
+}
+#text5{
+    font-size:30px;
     text-decoration: underline yellow;
     text-decoration: bold;
 }
-#aa{text-align: center;}
+
+#img2{
+    width: 120%; /* 幅を30%に指定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+#container2 h3{
+    text-decoration:underline red ;
+    text-decoration-thickness: 5px;
+}
+#aa{
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
 
 
 #container3{
@@ -49,8 +152,12 @@ header p{
     padding: 100px 50px 100px 50px;
     margin-top: 50px;
     background-color: #D0E2FD;
+    
 }
 
+#container3 p{
+    font-size: 25px;
+}
 
 #container4{
     display: flex;
@@ -63,68 +170,97 @@ header p{
     display: flex;
     flex-direction: column;
     width:400px;
-    height:400px;
-    background-color: #aaaaaa;
+    height:395px;
+    background-color: #668AE0;
     text-align: center;
+    text-decoration: none;
+    margin-bottom: 0;
+    color: white;
 }
 
-#en0{color:red;}
+#container5 h1{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+#en0{
+    color:yellow;
+    font-size: 70px;
+    margin: 10px;
+}
 
 #container6{
     display: flex;
     background-color: #FFE9F1;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    width: 80%;
+    padding: 150px 50px 150px 50px;
+    margin: 60px;
+    margin-top: 0px;
+    border-radius: 60px;
 }
 
 #m1{
+    font-size: 28px;
     text-align: center;
     background-color: #FEF3F3;
-    margin: 0px 300px;
+    margin: 50px 400px 0px 400px;
 }
 #container6 p{
-    background-color: #aaaaaa;
+    background-color: #FF9A9A;
     margin: auto;
-    padding: 60px;
     border-radius: 30%;
+    padding:70px 40px 70px 40px;
+    font-weight: bold;
+    font-size: 20px;
+
 }
 
 #container7{
     display:flex;
     padding: 50px;
+    padding-top: 20px;
     background-color: #D0E2FD;
 }
 
-h2{text-align: center;}
+#text4{
+    background-color: #D0E2FD;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 0;
+    text-align: center;
+}
 
 #container8 {
-    background-color: #73C3FD;
+    background-color: #668AE0;
     text-align: center;
     border-radius: 10%;
     margin: 15px;
+    color: white;
 }
 
 #container8 img{
-    width: 70%; /* 幅を30%に指定 */
+    width: 60%; /* 幅を30%に指定 */
      height: auto; /* 高さを自動調整 */
 }
 
 #container9 {
-    background-color: #73C3FD;
+    background-color: #668AE0;
     text-align: center;
     border-radius: 10%;
     margin: 15px;
+    color: white;
 }
 
 #container9 img{
-    width: 70%; /* 幅を30%に指定 */
+    width: 60%; /* 幅を30%に指定 */
      height: auto; /* 高さを自動調整 */
 }
 
 #container10{
     display: flex;
-    background-color: #FDF682;
+    background-color: #f4ee9d;
+    padding: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 #container11{
@@ -140,15 +276,33 @@ h2{text-align: center;}
 #container11 img{
     width: 30%; /* 幅を30%に指定 */
     height: auto; /* 高さを自動調整 */
+    filter: invert(50%);
 }
 
 #container12 img{
     width: 30%; /* 幅を30%に指定 */
     height: auto; /* 高さを自動調整 */
+    filter: invert(50%);
+
 }
 
 #text1{
-    background-color: #D9D9D9;
+    background-color: #668AE0;
+    color: white;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#text2{
+    background-color: #668AE0;
+    color: white;
+    text-align: center;
+    height: 100px;
+    padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     border-radius: 50%;
 }
 
@@ -165,11 +319,45 @@ h2{text-align: center;}
 #container14{
     background-color:#D0E2FD;
     text-align: center;
+    margin: 0;
+    padding: 30px;
 }
 
 #text3{
     background-color: #75A8F5;
-    border-radius: 20%;
-    margin-left: 50px;
-    margin-right: 50px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    margin-left:300px ;
+    margin-right: 300px;
+    color: black;
 }
+
+#container14 img{border-radius: 20px;}
+
+footer{
+    display: flex;
+    padding-left: 700px;
+}
+
+footer img{
+    width: 30%; /* 幅を30%に指定 */
+    height: auto; /* 高さを自動調整 */
+    padding-left: 70px;
+}
+
+a {
+    text-decoration: none; /* 下線をなくす */
+    color: inherit; /* テキスト色を親要素の色に継承 */
+    transition: 0.3s;
+  }
+
+  #container5 :hover {
+    background-color: #8fc6ea;
+    /* ホバー時のスタイルを指定（任意） */
+    /* 例えば、下線を追加する場合: text-decoration: underline; */
+    /* 例えば、色を変える場合: color: #FF0000; */
+  }
+ 
+  #text3:hover{text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);}
+  
+  #container6 p:hover{color: red;}

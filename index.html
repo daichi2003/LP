@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Let`s code py</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <script>
+        jQuery(function() {
+    var appear = false;
+    var pagetop = $('#page_top');
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {  //100pxスクロールしたら
+        if (appear == false) {
+          appear = true;
+          pagetop.stop().animate({
+            'right': '0px' //右から0pxの位置に
+          }, 300); //0.3秒かけて現れる
+        }
+      } else {
+        if (appear) {
+          appear = false;
+          pagetop.stop().animate({
+            'right': '-50px' //右から-50pxの位置に
+          }, 300); //0.3秒かけて隠れる
+        }
+      }
+    });
+    pagetop.click(function () {
+      $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+      return false;
+    });
+  });
+  
+    </script>
 </head>
 <body>
     <header>
@@ -13,14 +43,16 @@
         <p>生徒用</p>
         <p>法人・教員用</p>
     </header>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <div id="page_top"><a href="#"></a></div>
     <div id="container1">
         <div id="container2">
-         <h1>\情報科目の得点アップ!/</h1>
-         <p>情報・共通テスト対策アプリ</p id = text1>
+         <h2><span style="font-family: arial;">&#92;</span>情報科目の得点アップ!/</h2>
+         <h1 id="text5">情報・共通テスト対策アプリ</h1>
          <img src="img/letscodepy_logo (1).svg">
-         <p>情報Ⅰ学習の最短ルート！</p>
+         <h3>情報Ⅰ学習の最短ルート！</h3>
          </div>
-         <img src="img/SPを持つ手.png">       
+         <img  src="img/SPを持つ手.png" id="img2">
     </div>
     <p id=aa>国公立志望者の無視できない共通テスト対策に！</p>
     
@@ -28,58 +60,58 @@
         <div id = container4>
             <h1>情報Ⅰ学習アプリの決定版！</h1>
             <h1>基礎から発展問題、実践編をこれ1つで学べる</h1>
-            <p>１年生から情報Ⅰを学習していなかった人</p>
-            <p> がっつり共通テスト対策に臨みたい人</p>
+            <p>１年生から情報Ⅰを学習していなかった人<br>がっつり共通テスト対策に臨みたい人</p>
             <p>すべての受験生にこのアプリ！</p>
         </div>
-        <div id = container5>
+        <div id = container5><a href="https://apps.apple.com/jp/app/lets-code-py/id6446388017">
             <h1>利用料金</h1>
             <h1 id="en0">¥０</h1>
-            <p>Let`s Code Pyで</p>
-            <p>今すぐ情報Ⅰ学習を</p>
-            <p>始めよう！</p>
+            <p>Let`s Code Pyで<br>
+            今すぐ情報Ⅰ学習を</br>
+            始めよう！</p>
+            </a>
         </div>
     </div>
 
     <h3 id="m1">Let`s Code Pyのここがすごい!</h3>
     <div id = container6>
-        
-        <p>充実した一問一答</p>
-        <p>良問ぞろいの共テ予想問題</p>
-        <p>pythonの実行環境</p>
+        <p><a href="#text4">充実した一問一答</a></p>
+        <p><a href="#text4">良問の共テ予想問題</a></p>
+        <p><a href="#link">pythonの実行環境</a></p>
     </div>
-    <h2>それぞれのステップに合わせた演習方法</h2>
+    <h2 id="text4">それぞれのステップに合わせた演習方法</h2>
     <div id="container7">
-        <div id="container8">
+        <div id="container8" >
             <h3>一問一答で基礎知識を網羅</h3>
             <img src="img/スクリーンショット 2023-08-22 161142.png">
             <h3>全578問収録!</h3>
-            <p>章ごと、レベルごとに整理された問題で効率よく学べる</p>
-            <p>ブックマーク機能で復習も快適に</p>
+            <p>章ごと、レベルごとに整理された問題で効率よく学べる<br>
+            ブックマーク機能で復習も快適に</p>
         </div>
         <div id="container9">
-            <h3>共通テスト予想問題が</h3>
-            <h3>得点アップに直結!</h3>
+            <h3>共通テスト予想問題が<br>
+            得点アップに直結!</h3>
             <img src="img/スクリーンショット 2023-08-22 160959.png">
             <p>ワオ・コーポレーションが手掛ける質の高い問題で演習可能</p>
             <p>自動採点システムで学習を効率化</p>
-            <p>紙に印刷して演習することで、</p>
-            <p>より実践に近い形でも学習できる</p>
+            <p>紙に印刷して演習することで、<br>
+            より実践に近い形でも学習できる</p>
         </div>
     </div>
+     <div id="link"></div>
     <div id="container10">
         <div>
             <div id="container11">
                 <img src="img/女子高生のフリーアイコン15 (1).png">
                 <div id="text1">
-                    <p>スマホで簡単に学べる!</p>
-                    <p>電車などの隙間時間で効率よく得点アップできた!</p>
+                    <p>スマホで簡単に学べる!<br>
+                    電車などの隙間時間で効率よく得点アップできた!</p>
                 </div>
             </div>
             <div id="container12">
                 <div id="text2">
-                    <p>共通テスト予想問題が順次追加されるので</p>
-                    <p>演習量に困らない!</p>
+                    <p>共通テスト予想問題が順次追加されるので<br>
+                    演習量に困らない!</p>
                 </div>
                 <img src="img/男子学生アイコン5.png">
             </div>
@@ -87,15 +119,21 @@
         <div id="container13">
             <h3>面倒な設定なしでエディターアプリを利用可能</h3>
             <img src="img/エディタ実行画面.png">
-            <p>python実行に必要なエディターが環境整備なしですぐに使えます</p>
-            <p>pythonのコードを書いたらすぐに実行して確認できます</p>
-            <p>自分の手を動かしてコーディングすることで本当の理解につながります</p>
+            <p>python実行に必要なエディターが環境整備なしですぐに使えます<br>
+            pythonのコードを書いたらすぐに実行して確認できます<br>
+            自分の手を動かしてコーディングすることで本当の理解につながります</p>
         </div>
     </div>
     <div id="container14">
         <p>情報Ⅰの学習にあまり時間をかけられない難関国公立志望者に</p>
         <p> 一年の授業以降、情報Ⅰの学習をしていなかった人の総復習にも</p>
-        <h1 id="text3">今すぐ無料ダウンロード↓</h1>
+        <p>抜けのチェックや定期テスト対策にも使える！</p>
+        <a href="https://apps.apple.com/jp/app/lets-code-py/id6446388017"><h1 id="text3">今すぐ無料ダウンロード↓</h1></a>
+        <img src="img/スクリーンショット 2023-08-22 174711.png">
     </div>
+    <footer>
+        <img src="img/letscodepy_logo (1).svg">
+        <img src="img/スクリーンショット 2023-08-22 163144.png">
+    </footer>
 </body>
 </html>
